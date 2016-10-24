@@ -1,0 +1,69 @@
+//Подчёркнутый заголовок
+.header-underline__title{
+	text-transform:uppercase;
+	font-family: sansus_regular, sans-serif;
+	font-size: 35px;
+	position:relative;
+	padding-bottom: 20px;
+	display:inline-block;
+}
+.header-underline__title:after{
+	display:inline-block;
+	content:'';
+	width:90px;
+	position:absolute;
+	border-bottom:3px solid;
+	bottom:0;
+	left:50%;
+	margin-left:-45px;
+}
+.ac{
+	position: relative;
+}
+.ac:after{
+	transition: all 1s;
+	display:inline-block;
+	content:'';
+	width:90px;
+	position:absolute;
+	border-bottom:3px solid;
+	bottom:0;
+	left:50%;
+	margin-left:-45px;
+}
+.header-underline{
+	font-size: 35px;
+	width: 300px;
+	text-align:center;
+	font-family: sansus_regular,sans-serif;
+	margin:0 auto;
+}
+.header-underline__title_about{
+	color:#566358;
+}
+.header-underline-bg__svg-container{
+	position: absolute;
+	width:100%;
+	top:-50%;
+}
+.section__header2 .header-underline-bg__svg-container{
+	top:0;
+}
+.header-underline-bg__svg{
+	width:100%;
+	fill:#93c42e;
+	opacity:0.1;
+}
+.header-underline-bg__title{
+	padding-bottom: 20px;
+}
+.header-underline-bg__title:after{
+	display:inline-block;
+	content:'';
+	width:90px;
+	position:absolute;
+	border-bottom:3px solid;
+	bottom:0;
+	left:50%;
+	margin-left:-45px;
+}

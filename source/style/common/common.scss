@@ -1,0 +1,72 @@
+.wrapper-page_welcome{
+	background: url("../img/bg.png") 50%;
+	background-size:cover;
+	height:100vh; 	
+	min-height:650px;
+}
+.hide{
+	display:none;
+}
+
+
+
+
+
+// контейнер с иконками
+.social-container {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index:99;
+}
+.social-container svg{
+	opacity:1;
+}
+
+//заголовок секции
+.section__header{
+	font-family: "sansus_regular", sans-serif;
+	text-transform:uppercase;
+	font-size: 63px;
+	color: #373e42;
+	width: 42%;
+	text-align:center;
+	margin: 0 auto;
+	position:relative;
+	border-color: #373e42;
+	padding-bottom: 35px;
+	margin-bottom: 40px;
+}
+body{
+	height:100%;
+	font-family: robotoregular, sans-serif;
+	color:#566358;
+	font-size: 16px;
+	overflow:hidden;
+}
+.container{
+	margin: 0 auto;
+	position: relative;
+	@extend .cf;
+	text-align:center;
+}
+.container_slider{
+	height: 100%;
+}
+.section {
+	position:relative;
+  padding-top:70px;
+}
+#map { 
+		height: 100%;
+		width:100%; 
+		position:absolute;
+		top:0;
+	}
+.wrapper-page{
+	min-height:100%;
+	position:relative;
+	overflow:hidden;
+	text-align:center;
+	color:#fff;
+}

@@ -1,0 +1,223 @@
+// медиа
+@media screen and (max-width: 992px){
+	.review__container{
+	width:80%;
+}
+}
+@media screen and (max-width: 768px){
+	html{
+		font-size: 14px;
+	}
+	.my-skills-part__header{
+		margin-top: 50px;
+	}
+	.section__header_small{
+		width:35%;
+		font-size: 49px;
+		padding-top: 20px;
+ }
+ .header-page_angle:before, .header-page_angle:after {
+	  border-bottom-color:#ebefe2;
+	}
+
+	.section_about-me__part{
+		width:100%;
+		display:table-row;
+  }
+  .about_part__image-container,.about_part__text-container{
+	  width:62%;
+  }
+
+ .about_part__text-container{
+ 		margin-bottom: 50px;
+ }
+ .my-skills-part__description{
+ 	 width:70%;
+ 	 margin: 0 auto;
+ 	 margin-bottom: 50px;
+ 	 line-height:1.5;
+ }
+ .footer-part:first-child{
+ 	width:50%;
+ 	margin-bottom: 30px;
+ }
+.footer-part:nth-child(2){
+ 	width:50%;
+ 	margin-bottom: 30px;
+ }
+ .footer-part:last-child{
+ 	width:100%;
+ 	margin-bottom: 30px;
+ }
+
+.section_about{
+	background-size: 200%;
+}
+.review__container{
+	width:80%;
+}
+
+ //блог
+
+ .main-blog{
+ 	display:table-row;
+ 	width:100%;
+ }
+ .main-blog__article{
+	margin: 20px;
+ }
+.aside-blog{
+	display:none;
+}
+ .fixed{
+ 	width:50%;
+ 	background-color: #6c9c5a;
+ 	left:-50%;
+ 	display: block;
+ }
+
+.asie-blog__link{
+	color:#fff;
+}
+ .aside-blog__item_active{
+ 	color:#fff;
+ 	border:none;
+ }
+ .fixed:after{
+ 	z-index:-1;
+	cursor:pointer;
+	content:'';
+	position:absolute;
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	top:50%;
+	margin-top: -50px;
+	right:0;
+	margin-right: -25px;
+	background-color: #6c9c5a;
+	pointer-events: all;
+}
+
+// слайдер
+.slider__description-container{
+	height: 25%;
+	width:100%;
+}
+.slider__bigimg{
+	height: 50%;
+	width:100%;
+}
+
+.slider__buttons{
+	height: 25%;
+	width: 100%;
+}
+.slider .header-underline__title{
+	font-size: 30px;
+	padding-bottom: 0.75rem;
+}
+.slider_technologies{
+	font-size: 16px;
+}
+.description-container {
+    //position: relative;
+    //top: 50%;
+    //transform: translateY(-50%);
+}
+.slider__technologies{
+	margin-bottom: 10px;
+}
+.login-button_green:before {
+    width: 1.55rem;
+    height: 1.35rem;}
+ .slider__title 
+ {
+    margin-bottom: 10px;
+}
+}
+@media screen and (max-width: 480px){
+	.container{
+		width:95%;
+	}
+	.section__header_small{
+		font-size: 2.3rem;
+		width:50%;
+		padding-top: 2.05rem;
+	}
+	.header-underline-bg__title{
+		font-size: 2.3rem;
+	}
+	.header-underline-bg__svg-container{
+		top:-30%;
+	}
+	.about_part__image-container, .about_part__text-container {
+    width: 100%;
+}
+.about_part__text-container {
+	padding:10px;
+	margin-bottom: 10px;
+}
+.my-skills-part__description{
+	width:100%;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.my-skills-part__header {
+    margin-bottom: 15px;
+}
+.my-skills__skills{
+	margin-left: 0;
+	text-align:center;
+}
+.my-skills__item{
+	margin-right: 0;
+	width:50%;
+}
+
+.section_about{
+	background-size: 500%;
+}
+.review{
+	width:100%;
+	margin-bottom: 40px;
+}
+.review__container{
+	width:100%;
+}
+.slider .header-underline__title{
+	font-size: 21px;
+}
+.slider_technologies{
+	font-size: 14px;
+}
+
+
+.login-button_green{
+	font-size: 14px;
+}
+.footer-part:after{
+border:none;
+}
+.footer-part:first-child{
+	width:100%;
+	text-align:center;
+	border-bottom:0.0625rem solid rgba(255, 255, 255, 0.2);
+	padding-bottom: 20px;
+}
+.footer-part:nth-child(2){
+	width:100%;
+	text-align:center;
+	border-bottom:0.0625rem solid rgba(255, 255, 255, 0.2);
+	padding-bottom: 20px;
+}
+.footer-part:last-child{
+	width:100%;
+	text-align:center;
+	
+}
+
+.footer-bottom__item{
+	border:none;
+}
+}

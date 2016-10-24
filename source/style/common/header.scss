@@ -1,0 +1,82 @@
+.header-page{
+ 	height:100vh;
+ 	min-height:650px;
+	position:relative;
+	text-align:center;
+	background: url("../img/bg.png") 50%;
+	background-size:cover;
+}
+// Срез в хедере
+.header-page_angle:before, .header-page_angle:after {
+  content: '';
+  width: 50%;
+  position: absolute;
+  bottom:0;
+}
+.header-page_angle:before {
+  right:0;
+  width: 0;
+	height: 0;
+	border-bottom: 100px solid  #f8f9f5; 
+	border-left:  50vw solid transparent;
+}
+.header-page_angle:after {
+  width: 0;
+	height: 0;
+  left: 0;
+	border-bottom: 100px solid #f8f9f5; 
+	border-right: 50vw solid transparent;
+}
+.header-page_about:after {
+	border-bottom: 100px solid  #ebefe2; 
+}
+
+.header-page_blog:after, .header-page_blog:before{
+	border-bottom-color:#f9f8f0;
+} 
+.header-page_portfolio:after, .header-page_portfolio:before{
+	border-bottom-color:#fff;
+} 
+.site-description{
+	position:relative;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+.site-description .site-info__name{
+	font-size: 35px;
+	margin-top:15px;
+}
+.site-description .site-info__description{
+	opacity:1;
+}
+.site-info__bg{
+	position: absolute;
+	top:0;
+	height:100%;
+	width:100%;
+	z-index:-1;
+}
+.site-info__bg svg{
+	transform: scale(4);
+	fill: #fff;
+	opacity:0.12;
+}
+//срелка вниз
+.arrow-down{
+	position: absolute;
+	right:50%;
+	bottom:10%;
+	margin-right: -13px;
+	z-index:100;
+	cursor:pointer;
+}
+.arrow-down__svg{
+	width:26px;
+	height:16px;
+	fill:#fff;
+	opacity:0.7;
+}
+.arrow-down:hover .arrow-down__svg{
+	opacity:1;
+}

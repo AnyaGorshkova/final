@@ -1,0 +1,61 @@
+// СЕКЦИЯ КОНТАКТЫ
+.section_map{
+	height:100vh;
+	background-size: cover;
+	background-position: center center;
+	padding-top: 0;
+	position: relative;
+}
+.container-contact{
+	height:100vh;
+	position:relative;
+}
+.popup-connect{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:380px;
+	text-align:center;
+	background-color: rgba(255,255,255,0.6);
+	border-radius:5px;;
+	overflow:hidden;
+	font-family: robotomedium, sans-serif;
+}
+.popup-connect__header{
+	margin-bottom: 30px;
+	margin-top:30px;
+}
+.popup-connect_contact{
+	padding:40px;
+	padding-top: 0;
+}
+.contact-container{
+	font-family: robotomedium, sans-serif;
+	color: #455a64;
+	text-align: left;
+}
+.contact__item{
+	margin-bottom: 20px;
+}
+.contact__item:last-child{
+	margin-bottom: 0;
+}
+.contact__icon{
+	display:inline-block;
+	vertical-align:middle;
+	margin-right: 10px;
+}
+.contact__text{
+	display:inline-block;
+	vertical-align:middle;
+	opacity:0.8;
+}
+.contact__svg{
+	height:24px;
+	width:24px;
+	fill:#6c9c5a;
+}
+.popup-connect__header .header-underline{
+	width:auto;
+}

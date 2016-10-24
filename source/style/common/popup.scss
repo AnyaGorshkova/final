@@ -1,0 +1,259 @@
+// Всплывашка
+.popap-wrapper{
+	position:relative;
+	background-color: rgba(0,0,0,0.6);
+	border-radius: 5px;
+	overflow: hidden;
+	padding-top: 40px;
+}
+.popap-wrapper-container{
+	position:relative;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+//для стороны с аторизацией
+.input_container{
+	position:relative;
+	width:100%;
+	padding-left:20px;
+	padding-right:20px;
+	margin-bottom: 20px;
+}
+.icon_input{
+	font-family: Conv_FontAwesome,sans-serif;
+	line-height:45px;
+	z-index:100;
+	height:100%;
+	position:absolute;
+	color:#c4cbcd;
+	background-color: #f0efe9;
+	top:0;
+	left:20px;
+	border-top-left-radius:40px;
+	border-bottom-left-radius:40px;
+	width:45px;
+}
+.input_container:nth-child(1) .icon_input:before{
+	content: '\f007';
+	font-family: Conv_FontAwesome,sans-serif;
+}
+.input_container:nth-child(2) .icon_input:before{
+	content: '\f084';
+	font-family: Conv_FontAwesome,sans-serif;
+}
+.login_input{
+	display:block;
+	width:100%;
+	border:none;
+	border-radius: 40px;
+	position:relative;
+	padding: 15px;
+	padding-left:65px;
+	outline:none;
+}
+.cap_container{
+	margin-bottom:10px;
+}
+.check{
+	margin-bottom: 20px;
+}
+.check_robot_label{
+	opacity: 0.8;
+}
+.radio{
+	padding: 0;
+}
+.radio_title{
+	margin-bottom: 10px;
+	opacity:0.8;
+}
+.radio-container{
+	display:inline-block;
+	margin-right: 40px;
+}
+.radio-container:last-child{
+	margin-right: 0;
+}
+.radio_robot_label{
+	opacity: 0.8;
+}
+.button_login{
+	width:50%;
+}
+.check_robot{
+	display:none;
+}
+.check_robot_label{
+	vertical-align:middle;
+}
+
+.check_robot_label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+  border: 2px solid #b6b6b6;
+	background-color: #fff;
+	border-radius: 3px;
+}
+
+input[type=checkbox]:checked + label:before{
+	background-color: #acd27d;
+	background-image:  url(../img/check.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	border: 2px solid #acd27d;
+}
+.radio_robot{
+	display:none;
+}
+
+.radio_robot_label{
+	vertical-align:middle;
+}
+
+.radio_robot_label:before {
+		box-sizing:content-box;
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+    vertical-align: middle;
+    border: 6px solid #ffffff;
+    border-radius:50%;
+    background-color: #fff;
+}
+
+input[type=radio]:checked + label:before{
+	background-color: #acd27d;}
+
+
+
+
+// аватар
+.avatar{
+	height:141px;
+	width:141px;
+	border-radius:50%;
+	overflow:hidden;
+	margin: 0 auto;
+}
+.avatar__image{
+	display:block;
+	width:100%;
+}
+
+// ФИО
+.site-info{
+	line-height:1.5;
+}
+.site-info__name{
+	font-size: 28px;
+	font-family: robotomedium, sans-serif;
+}
+.site-info__descr{
+	opacity:0.8;
+}
+.site-info-container{
+	margin-bottom: 30px;
+	margin-top:10px;
+}
+// социальные иконки
+.popup__icons{
+	margin-bottom: 42px;
+}
+.social-list{
+	font-size: 0;
+}
+.social-list__item{
+	display:inline-block;
+	margin-right: 25px;
+	vertical-align: middle;
+}
+.social-list__item:last-child{
+	margin-right: 0;
+}
+.social-list__link{
+	display:block;
+	text-indent:-1000;
+}
+.social-list__svg{
+	height:23px;
+	width:33px;
+	fill:#fff;
+	opacity:0.7;
+}
+.social-list__svg:hover{
+	fill:#4e8839;
+}
+// Кнопки
+.buttons{
+	position: absolute;
+	bottom:0;
+	display:flex;
+	width:100%;
+}
+.button{
+	flex-grow:1;
+}
+.button_link {
+	font-family: robotomedium;
+	display:block;	
+	border-right:2px solid #93b190;
+	background-color: #608e53;
+	padding:15px 0;
+}
+.button:last-child .button_link{
+	border:none;
+}
+.button_link:hover{
+	background-color: #498039;
+}
+.popup-wrapper__header{
+	margin-bottom: 32px;
+}
+
+// Анимация всплывашки
+.popap-wrapper-container {
+	perspective: 1000;
+}
+.popap-wrapper-container.flipp .flipper {
+		transform: rotateY(180deg);
+	}
+@keyframes flip_start{
+	from {transform: rotateX(-90deg);}
+	to {transform: rotateX(0deg);}
+}
+@keyframes op{
+	from {opacity:0;}
+	to {opacity:1;}
+}
+.flipper {
+	transform: rotateX(-90deg);
+	transition: transform 1.5s;
+	transform-style: preserve-3d;
+	position: relative;
+	animation-name:flip_start;
+	animation-duration:1.5s;
+	transform: rotateX(0deg);
+}
+.popap-wrapper-container, .front, .back {
+	width: 380px;
+	height:26rem;
+}
+.front, .back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+}
+.front {
+	z-index: 0;
+}
+.back {
+	transform: rotateY(180deg);
+}

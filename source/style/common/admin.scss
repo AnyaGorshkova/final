@@ -1,0 +1,95 @@
+//Панель администратора
+.wrapper-page_admin{
+	filter:opacity(0.1);
+}
+.container-admin{
+	position:absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index:1000;
+}
+.admin-header{
+	@extend .cf;
+	height:80px;
+	background-color: rgb(108,156,90);
+	color:#fff;
+	line-height:80px;
+	padding: 0 30px;
+	font-family: robotomedium, sans-serif;
+}
+.admin-header__title{
+	float: left;
+	font-size: 28px;
+	opacity:1;
+}
+.admin-header__return-to-site{
+	float: right;
+	opacity:0.7;
+	font-size: 16px;
+}
+.admin-header__link{
+	display:inline;
+	border-bottom: 1px dashed #fff;
+}
+.main-admin__title{
+	color:#455a64;
+	font-size: 21px;
+	font-family: robotomedium, sans-serif;
+	padding: 50px 30px;
+}
+.main-admin__form{
+	display:flex;
+	flex-direction: column;
+	flex-wrap:wrap;
+	height:430px;
+	align-items: flex-start;
+	width:50%;
+}
+fieldset{
+	border:none;
+	width:250px;
+	margin: 0;
+	margin-bottom: 30px;
+}
+fieldset:nth-child(2n){
+	margin-bottom: 0px;
+}
+legend{
+	font-family: robotomedium, sans-serif;
+	font-size: 16px;
+	color: #455a64;
+	margin-bottom: 25px;
+	margin-left: 30px;
+}
+div.main-admin__input-container{
+	@extend .cf;
+	margin-bottom: 10px;
+	line-height:30px;
+	margin-left: 50px;
+}
+div.main-admin__input-container:last-child{
+	margin-bottom: 0;
+}
+.main-admin__input-content{
+	vertical-align:middle;
+	display:inline-block;
+	float: right;
+}
+.main-admin__input{
+	width:47px;
+	height:30px;
+	border:none;
+	border-radius:5px;
+	outline:none;
+	text-align:right;
+	padding:5px;
+}
+.main-admin__label{
+	display:inline-block;
+	vertical-align:middle;
+}
+.main-admin__percent{
+	display:inline-block;
+}

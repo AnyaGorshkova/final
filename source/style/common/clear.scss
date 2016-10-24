@@ -1,0 +1,27 @@
+// Сброс стилей
+.cf::before, .cf::after {
+    content: " ";
+    display: table;
+}
+.cf::after {
+   clear: both;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+p{
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color:#fff;
+}
+html{
+	height: 100%;
+	box-sizing:border-box;
+}
+*, *:before, *:after{
+	box-sizing:inherit;
+}

@@ -1,0 +1,171 @@
+.section_about-me{
+	padding-top: 0;
+}
+.section__header_small{
+	width:80%;
+	padding-bottom: 0;
+}
+.section_about-me__part{
+	display:table-cell;
+	width:50%;
+}
+.section_about-me__part-about{
+	background-color: #ebefe2;
+}
+.section_about-me__part-my-skills{
+	background-color: #f8f9f5;
+}
+.about_part__image-container{
+	width:75%;
+	height:65%;
+	margin: 0 auto;
+	overflow:hidden;
+	margin-bottom: 40px;
+}
+.about_part__image{
+	display:block;
+	width:100%;
+}
+.about_part__text-container{
+	width:75%;
+	margin:0 auto;
+	font-family: robotoregular, sans-serif;
+	color:#566358;
+	line-height:1.5;
+	text-align:left;
+	margin-bottom: 50px;
+}
+.section_about-me__content{
+		display:table;
+		width:100%;
+}
+.my-skills-part__header{
+	margin-bottom: 50px;
+}
+.my-skills-part__description{
+	color:#566358;
+	text-align:justify;
+	margin: 0 15px 60px 25px;
+}
+
+.my-skills__skills{
+	margin-left: 25px;
+}
+.my-skills__list{
+	font-size: 0;
+}
+.my-skills__item{
+	display:inline-block;
+  position: relative;
+
+	font-family: robotomedium, sans-serif;
+	font-size: 12px;
+	text-align:center;
+	color:#4e8839;
+	overflow:hidden;
+	margin-right: 40px;
+	margin-bottom: 40px;
+}
+.my-skills__item svg{
+	width: 100px;
+	height: 100px;
+  transform:rotate(-90deg);
+  background: #deddd6;
+  border-radius: 50%;
+}
+
+
+@keyframes fillup90 {
+	from {stroke-dasharray: 0 251;}
+  to {stroke-dasharray: 200 251;}
+}
+
+@keyframes fillup20 {
+	from {stroke-dasharray: 0 251;}
+  to {stroke-dasharray: 50 251;}
+}
+
+@keyframes fillup30 {
+	from {stroke-dasharray: 0 251;}
+  to {stroke-dasharray: 100 251;}
+}
+@keyframes fillup40 {
+
+	from {stroke-dasharray: 0 251;}
+  to {stroke-dasharray: 150 251;}
+}
+@keyframes fillup50 {
+	from {stroke-dasharray: 0 251;}
+  to {stroke-dasharray: 125 251;}
+}
+
+
+.fill_anim90{
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+	animation-name: fillup90;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+.fill_anim20{
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+	animation-name: fillup20;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+.fill_anim30{
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+	animation-name: fillup30;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+.fill_anim40{
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+	animation-name: fillup40;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+.fill_anim50{
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+	animation-name: fillup50;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+
+circle, .fillup{
+  fill:#deddd6;
+  stroke:#74a163;
+  stroke-dasharray: 0 251;
+  stroke-width:20px;
+
+}
+.percent{
+  position:absolute;
+  top:50%;
+  margin-top:-35px;
+  left:50%;
+  margin-left:-35px;
+ border-radius:50%;
+  width:70px;
+  height:70px;
+  background-color: #fff;
+}
+.my-skills__item:last-child{
+	margin-right:0;
+}
+.my-skills__text{
+	position: relative;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+.my-skills__header-list{
+	font-family: robotomedium, sans-serif;
+	font-size: 28px;
+	color:#566358;
+	margin-bottom: 20px;
+}

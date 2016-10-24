@@ -1,0 +1,74 @@
+extends ../_template
+
+block variables
+  - var title = 'Панел администрирования'
+
+block content
+  div.wrapper-page.wrapper-page_welcome.wrapper-page_admin
+  div.container-admin
+   header.admin-header
+    div.admin-header__title Панель администрирования
+    div.admin-header__return-to-site
+     a.admin-header__link(href="#") Вернуться на сайт
+   main.main-admin
+    div.main-admin__title Страница "Обо мне"
+    div.main-admin__content
+     form.main-admin__form
+      fieldset.main-admin__skill
+       legend Frontend
+       div.main-admin__input-container
+        label.main-admin__label(for="html_input") Html
+        div.main-admin__input-content
+         input.main-admin__input(type=text, placeholder="0" name="html_input")
+         div.main-admin__percent %
+       div.main-admin__input-container
+        label.main-admin__label(for="css_input") CSS
+        div.main-admin__input-content
+         input.main-admin__input(type=text, placeholder="0" name="html_input")
+         div.main-admin__percent %
+       div.main-admin__input-container
+        label.main-admin__label(for="js_input") JavaScript
+        div.main-admin__input-content
+         input.main-admin__input(type=text, placeholder="0" name="html_input")
+         div.main-admin__percent %
+      fieldset.main-admin__skill
+       legend Backend
+       div.main-admin__input-container
+        label.main-admin__label(for="html_input") Html
+        div.main-admin__input-content
+         input.main-admin__input(type=text, placeholder="0" name="html_input")
+         div.main-admin__percent %
+       div.main-admin__input-container
+        label.main-admin__label(for="css_input") CSS
+        div.main-admin__input-content
+         input.main-admin__input(type=text, placeholder="0" name="html_input")
+         div.main-admin__percent %
+       div.main-admin__input-container
+        label.main-admin__label(for="js_input") JavaScript
+        div.main-admin__input-content
+         input.main-admin__input(type=text, placeholder="0" name="html_input")
+         div.main-admin__percent %
+      fieldset.main-admin__skill
+       legend Workflow
+       div.main-admin__input-container
+        label.main-admin__label(for="html_input") Html
+        div.main-admin__input-content
+         input.main-admin__input(type=text, placeholder="0" name="html_input")
+         div.main-admin__percent %
+       div.main-admin__input-container
+        label.main-admin__label(for="css_input") CSS
+        div.main-admin__input-content
+         input.main-admin__input(type=text, placeholder="0" name="html_input")
+         div.main-admin__percent %
+       div.main-admin__input-container
+        label.main-admin__label(for="js_input") JavaScript
+        div.main-admin__input-content
+         input.main-admin__input(type=text, placeholder="0" name="html_input")
+         div.main-admin__percent %
+     div.submit-skills сохранить
+      
+  div.preloader-container
+   div.preloader
+    div.preloader__percent 0%
+    div.preloader__image
+     include ../../images/forest.svg

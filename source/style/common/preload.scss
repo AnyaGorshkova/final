@@ -1,0 +1,39 @@
+//ПРЕЛОАДЕР
+@keyframes preloader {
+	0% {stroke-dasharray: 0 100;}
+  100% {stroke-dasharray: 100 100;}
+}
+.preloader-container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height:100%;
+	width:100%;
+	background-color: rgba(108,156,90,0.87);
+	z-index:1001;
+}
+.preloader{
+	display:inline-block;
+	position: absolute;
+	top:50%;
+	left:50%;
+	text-align:center;
+	color: #fff;
+	transform: translate(-50%, -50%);
+	
+}
+.preloader__image svg {
+	stroke:#fff;
+}
+.preloader__image svg g:first-child path {
+
+	animation: preloader 1s ease-in infinite;
+}
+.preloader__image svg g:nth-child(2) path {
+
+	animation: preloader 1.5s ease-in infinite;
+}
+.preloader__image svg g:nth-child(3) path {
+
+	animation: preloader 2s ease-in infinite;
+}

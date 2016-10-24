@@ -1,0 +1,153 @@
+//СЛАЙДЕР
+
+.slider-container{
+	height:100vh;
+	min-height:750px;
+}
+
+.slider{
+	@extend .cf;
+	height: 100%;
+	width: 100%;
+}
+.slider__description-container{
+	height: 100%;
+	width:50%;
+	color:#000;
+	float: left;
+position: relative;
+background-color: #ebefe2;
+}
+.slider__bigimg{
+	height: 70%;
+	width:50%;
+	float: right;
+	position: relative;
+	background-color: #e1e4d7;
+}
+
+.slider__buttons{
+	height: 30%;
+	float: right;
+	width: 50%;
+	background-color: #e1e4d7;
+	@extend .cf
+}
+.slider__part_left{ 
+	background-color: #ebefe2;
+	position: relative;
+}
+.description-container{
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	width:100%;
+}
+.slider .header-underline{
+	width:63%;
+}
+.slider__title{
+	margin-bottom: 30px;
+
+}
+.slider__technologies{
+	color:#4e8839;
+	text-transform:uppercase;
+	font-family: robotomedium, sans-serif;
+	margin-bottom: 60px;
+}
+
+.slider__button{
+	float: left;
+	width: 50%;
+	height: 100%;
+	position: relative;
+}
+.slider__button_prev{
+	background-color: #f1ede1;
+}
+.slider__button_next{
+	background-color: #e3ded0;
+}
+.slider__list{
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	overflow:hidden;
+}
+.slider__item{
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	top:100%;
+	overflow: hidden;
+}
+.slider__item_prev{
+	
+	top:-100%;
+}
+.slider__descriptions{
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.slider__description{
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	top:100%;
+	opacity: 0;
+}
+.slider__img{
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	max-height: 100%;
+
+}
+.controls{
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	text-align: center;
+	text-indent:-9999px;
+}
+.controls_next{
+	
+	background: rgba(147,153,141,0.7) url("../img/portf_arrow_up.png") center center no-repeat;
+}
+.controls_prev{
+	background: rgba(176,183,170,0.7) url("../img/portf_arrow_down.png") center center no-repeat;
+}
+
+
+.slider__item_big{
+	opacity:0;
+}
+@keyframes active{
+	from {
+		top:100%;}
+	to {
+		top:0;}
+}
+@keyframes active_op{
+	from {
+		top:0;}
+	to {
+		top:-100%;}
+}
+.active{
+	top:0;
+}
