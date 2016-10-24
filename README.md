@@ -5,7 +5,7 @@ Stack:
  
 Getting started:
 
-1. clone this https://github.com/AnyaGorshkova/final.git folder
+1. git clone https://github.com/AnyaGorshkova/final.git folder
 2. cd folder
 3. npm install gulpjs/gulp-cli -g  // Install the latest Gulp CLI tools globally
 4. npm install
